@@ -4,15 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>cn.itsource.springcloud</groupId>
-    <artifactId>springcloud_parent_day02</artifactId>
+    <groupId>cn.itsource.ttg</groupId>
+    <artifactId>ttg</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>eureka_server_7001</module>
-        <module>springcloud_user</module>
-        <module>zuul_gatewar_9527</module>
-        <module>ConfigServer_4396</module>
+        <module>Eureka_server_7001</module>
+        <module>zuul_gateway_9527</module>
+        <module>basic_parent</module>
+        <module>plat_parent</module>
+        <module>config_server_4396</module>
     </modules>
 
     <properties>
@@ -49,5 +50,6 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
 
 </project>

@@ -1,0 +1,18 @@
+server:
+  port: 9527
+spring:
+  application:
+    name: ttg-zuul #网关也需要注册到注册中心，这里是在注册中心中显示的名字
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka #注册到注册中心
+  instance:
+    instance-id: gateway-9527.com
+    prefer-ip-address: true  #显示ip
+zuul: #网关的相应配置
+  routes:
+     plat.serviceId: ttg-plat  #转发给那个服务，这里需要小写
+     plat.path: /plat/**  #以/user/开头的所有路径都转发给user-provider
+  ignored-services:  "*" #可以一个一个配置,但是很麻烦,用*来通配
+  prefix: "/services" #加上统一前缀，避免暴露服务路径

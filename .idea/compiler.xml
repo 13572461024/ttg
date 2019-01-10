@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ConfigServer_4396" />
+        <module name="eureka_server" />
+        <module name="user_consumer_9001" />
+        <module name="user_consumer_feign_hystrix_9002" />
+        <module name="user_interface" />
+        <module name="user_service_8001" />
+        <module name="user_service_configclient_8003" />
+        <module name="user_service_hystrix_8002" />
+        <module name="zuul_gatewar_9527" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ConfigServer_4396" target="1.5" />
+      <module name="eureka_server" target="1.5" />
+      <module name="eureka_server_7001" target="1.5" />
+      <module name="springcloud_parent_day02" target="1.5" />
+      <module name="springcloud_user" target="1.5" />
+      <module name="user_consumer_9001" target="1.5" />
+      <module name="user_consumer_feign_hystrix_9002" target="1.5" />
+      <module name="user_interface" target="1.5" />
+      <module name="user_provider_8001" target="1.5" />
+      <module name="user_service_8001" target="1.5" />
+      <module name="user_service_configclient_8003" target="1.5" />
+      <module name="user_service_hystrix_8002" target="1.5" />
+      <module name="user_service_hystrix_feign_8003" target="1.5" />
+      <module name="zuul_gatewar_9527" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
